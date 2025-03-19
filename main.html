@@ -8,20 +8,22 @@
 <body>
 
   <div class="wrapper">
-    <video class="flex" width="765" height="430" src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
+    <video class="flex player__video" width="765" height="430" src="https://www.w3schools.com/html/mov_bbb.mp4" controls></video>
     <div class="speed">
       <div class="speed-bar">1×</div>
     </div>
 
-	  <input id="player_button toggle" type="button" value="❚❚" />
+	  <div class="controls">
+		  <input id="player_button toggle" type="button" value="❚❚" />
 
-	  <div>
-		  <input style="width:20px; cursor:pointer;" id="backwardBtn" value="<<" />
-		   <input style="cursor:pointer;" type="range" value="50"/>
-		  <input style="width:20px; cursor:pointer;" id="forwardBtn" value=">>" />
+		  <div>
+			  <input style="width:20px; cursor:pointer;" id="backwardBtn" value="<<" />
+			   <input style="cursor:pointer;" type="range" value="50"/>
+			  <input style="width:20px; cursor:pointer;" id="forwardBtn" value=">>" />
+		  </div>
+	
+		  <input id="volume" type="range" value="75" />
 	  </div>
-
-	  <input id="volume" type="range" value="75" />
   </div>
 
 <script  src="./script.js">
